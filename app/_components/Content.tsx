@@ -7,14 +7,17 @@ export const Content = () => (
   <>
     <ColorModeToggleButton />
 
+    <Link href='/nothing' as={NextLink}>
+      nothing
+    </Link>
+    <Link href='/with-color-mode-script' as={NextLink}>
+      with ColorModeScript
+    </Link>
+    <Link href='/with-initial-color-mode' as={NextLink}>
+      with initial color mode
+    </Link>
     <Link href='/complete' as={NextLink}>
       complete
-    </Link>
-    <Link href='/without-color-mode-script' as={NextLink}>
-      without ColorModeScript
-    </Link>
-    <Link href='/without-initial-color-mode' as={NextLink}>
-      without initial color mode
     </Link>
 
     <Button colorScheme='blue'>primary</Button>

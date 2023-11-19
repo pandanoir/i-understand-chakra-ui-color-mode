@@ -11,7 +11,7 @@ export const ChakraProviderClient = ({
   children,
   initialColorMode,
 }: PropsWithChildren<{
-  initialColorMode: 'light' | 'dark';
+  initialColorMode: 'light' | 'dark' | undefined;
 }>) => (
   <ChakraProvider
     colorModeManager={cookieStorageManager}

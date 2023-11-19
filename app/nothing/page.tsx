@@ -4,7 +4,7 @@ import { Content } from '../_components/Content';
 export default function Home() {
   return (
     <VStack>
-      <Heading>without initial color mode</Heading>
+      <Heading>complete</Heading>
       <Content />
     </VStack>
   );

@@ -13,13 +13,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const initialColorMode =
-    cookies().get('chakra-ui-color-mode')?.value === 'light' ? 'light' : 'dark';
+  const initialColorMode = cookies().get('chakra-ui-color-mode')?.value;
 
   return (
     <html lang='en'>
       <body>
-        <ChakraProviderClient initialColorMode={initialColorMode}>
+        <ChakraProviderClient
+          initialColorMode={initialColorMode as 'light' | 'dark' | undefined}
+        >
           {children}
         </ChakraProviderClient>
       </body>
