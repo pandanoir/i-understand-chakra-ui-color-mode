@@ -1,6 +1,7 @@
 'use client';
 import {
   ChakraProvider,
+  ColorModeScript,
   cookieStorageManager,
   extendTheme,
 } from '@chakra-ui/react';
@@ -16,6 +17,7 @@ export const ChakraProviderClient = ({
     colorModeManager={cookieStorageManager}
     theme={extendTheme({ config: { initialColorMode } })}
   >
+    <ColorModeScript type='cookie' />
     {children}
   </ChakraProvider>
 );

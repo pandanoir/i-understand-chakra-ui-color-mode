@@ -1,8 +1,7 @@
 import type { Metadata } from 'next';
 import { cookies } from 'next/headers';
-import './globals.css';
+import '../globals.css';
 import { ChakraProviderClient } from './ChakraProviderClient';
-import { ColorModeScript } from '@chakra-ui/react';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -21,7 +20,6 @@ export default function RootLayout({
     <html lang='en'>
       <body>
         <ChakraProviderClient initialColorMode={initialColorMode}>
-          <ColorModeScript type='cookie' />
           {children}
         </ChakraProviderClient>
       </body>

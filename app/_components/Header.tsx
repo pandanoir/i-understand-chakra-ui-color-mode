@@ -1,4 +1,3 @@
-'use client';
 import { Button, HStack, useColorMode } from '@chakra-ui/react';
 
 export const Header = () => {
